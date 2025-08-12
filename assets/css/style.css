@@ -1,0 +1,71 @@
+/* Custom styles for R&M Web Solutions */
+
+/* Hero section styling */
+.hero {
+    position: relative;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* Dark overlay on hero for better text readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Ensure hero content sits above the overlay */
+.hero .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Icon box styling */
+.icon-box i {
+    color: #0d6efd;
+}
+
+.icon-box {
+    transition: transform 0.2s ease;
+}
+
+.icon-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Call to action gradient */
+.cta-section {
+    background-image: linear-gradient(90deg, #0d6efd, #6610f2);
+}
+
+/* Simple page header styling for sub‑pages */
+.page-header {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.page-header h1 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* Footer link styling */
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #adb5bd;
+    text-decoration: none;
+}
